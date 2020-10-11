@@ -11,10 +11,12 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 let teamMembers = [];
 
-
+// create function to create the html pages
 function createPage() {
     fs.writeFileSync(outputPath, render(teamMembers), "utf8")
 }
+
+// function with inquirer to prompt to create a new team member 
 function createTeam() {
 
     inquirer.prompt([
@@ -50,7 +52,7 @@ function createTeam() {
 
 
 
-
+// function to use the manager class
 function addManager() {
     inquirer.prompt([
         {
@@ -73,6 +75,9 @@ function addManager() {
             name: "officeNumber",
             message: "Please enter this Manager office number"
         }
+
+        // gather the information given and then push to teamMembers array and create html
+
     ]).then(data => {
         const manager = new Manager(data.managerName, data.managerId, data.managerEmail, data.officeNumber)
         teamMembers.push(manager)
@@ -83,6 +88,9 @@ function addManager() {
 
 
 }
+
+// function to use the engineer class
+
 
 function addEngineer() {
     inquirer.prompt([
@@ -106,6 +114,9 @@ function addEngineer() {
             name: "engGithub",
             message: "Please enter this Engineer github information"
         }
+
+        // gather the information given and then push to teamMembers array and create html
+
     ]).then(data => {
         const engineer = new Engineer(data.engName, data.engId, data.engEmail, data.engGithub);
         teamMembers.push(engineer)
@@ -113,6 +124,9 @@ function addEngineer() {
     })
 
 }
+
+// function to use the intern class
+
 
 function addIntern() {
     inquirer.prompt([
@@ -137,6 +151,9 @@ function addIntern() {
             name: "internSchool",
             message: "Please enter the school this Intern is attending"
         }
+
+        // gather the information given and then push to teamMembers array and create html
+
     ]).then(data => {
         const intern = new Intern(data.internName, data.internId, data.internEmail, data.internSchool);
         teamMembers.push(intern)
