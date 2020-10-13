@@ -2,6 +2,10 @@
 # Chad Tarpey
 ![Project Image](assets/img/my-team.png)
 
+
+# Link to a video of how it works
+[Team-Generator Video](https://drive.google.com/file/d/18ToBRSddWmgxhRaOF-6pNE5Zoi7L5H6O/view)
+
 ---
 
 ### Table of Contents
