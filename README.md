@@ -1,6 +1,6 @@
 # Team Generator
 # Chad Tarpey
-![Project Image](./assets/images/weather.png)
+![Project Image](assets/img/my-team.png)
 
 ---
 
@@ -44,7 +44,7 @@ Team Generator
 
 ---
 ## How To Use
-- Visit   https://chadtarpey615.github.io/Weather-Dashboard/
+- Visit   https://chadtarpey615.github.io/My-Team/
 - Google Chrome or any Web Browser
 ---
 ## References
